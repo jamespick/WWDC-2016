@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Terminal Background" translatesAutoresizingMaskIntoConstraints="NO" id="1LL-wf-YKm">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="[*] Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NPN-8M-AW2">
+                                <rect key="frame" x="146" y="289" width="308" height="21"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                <color key="textColor" red="0.15686274509803921" green="0.99607843137254903" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ApW-iS-S4Y">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="(•)  (•)  (•)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nud-rn-Lul">
+                                        <rect key="frame" x="242" y="80" width="118" height="18"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="15"/>
+                                        <color key="textColor" red="0.15686274510000001" green="0.99607843139999996" blue="0.078431372550000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="nud-rn-Lul" firstAttribute="centerX" secondItem="ApW-iS-S4Y" secondAttribute="centerX" id="9Wn-gS-0IT"/>
+                                    <constraint firstItem="nud-rn-Lul" firstAttribute="centerY" secondItem="ApW-iS-S4Y" secondAttribute="centerY" id="TcE-du-F23"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21568627450980393" green="0.21568627450980393" blue="0.23529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="NPN-8M-AW2" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="9bg-PI-NzT"/>
+                            <constraint firstItem="ApW-iS-S4Y" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="UrW-xF-0P5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1LL-wf-YKm" secondAttribute="trailing" constant="-20" id="VBk-Yh-2ZF"/>
+                            <constraint firstItem="1LL-wf-YKm" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="Xz9-D4-M8h"/>
+                            <constraint firstItem="NPN-8M-AW2" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="ZNr-uF-dSM"/>
+                            <constraint firstItem="ApW-iS-S4Y" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="eXO-Rg-rsb"/>
+                            <constraint firstItem="1LL-wf-YKm" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="hTk-gH-Jnl"/>
+                            <constraint firstItem="ApW-iS-S4Y" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.5" id="pF3-1j-zdG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ApW-iS-S4Y" secondAttribute="trailing" constant="-20" id="vPz-Zc-WHk"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="1LL-wf-YKm" secondAttribute="bottom" id="xSr-pG-w6r"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Terminal Background" width="414" height="736"/>
+    </resources>
+</document>
